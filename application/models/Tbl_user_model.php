@@ -14,6 +14,11 @@ class Tbl_user_model extends CI_Model
     /*
      * Get tbl_user by id_user
      */
+    function auth($data){
+        $query = $this->db->get_where('tbl_user',$data);
+        return $query;
+    }
+
     function get_tbl_user($id_user)
     {
         return $this->db->get_where('tbl_user',array('id_user'=>$id_user))->row_array();

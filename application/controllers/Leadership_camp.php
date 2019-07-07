@@ -39,4 +39,12 @@ class Leadership_camp extends CI_Controller {
 		$this->load->view('leadership_camp', $data);
 		$this->load->view('footer');
 	}
+
+	public function detail($id)
+	{
+        $data['tbl_leader_camp'] = $this->Tbl_leader_camp_model->get_tbl_leader_camp($id);
+		$this->load->view('header');
+		$this->load->view('detail_leader', $data);
+		$this->load->view('footer');
+	}
 }

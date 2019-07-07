@@ -39,4 +39,12 @@ class Hotel extends CI_Controller {
 		$this->load->view('hotel',$data);
 		$this->load->view('footer');
 	}
+
+	public function detail($id_hotel)
+	{
+        $data['tbl_hotel'] = $this->Tbl_hotel_model->get_tbl_hotel($id_hotel);
+		$this->load->view('header');
+		$this->load->view('detail_hotel',$data);
+		$this->load->view('footer');
+	}
 }

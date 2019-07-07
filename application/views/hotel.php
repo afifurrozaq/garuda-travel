@@ -17,9 +17,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="col-lg-4 col-sm-6 mb-5 w3_agile_services_grid">
 				<div class="agile_services_grid">
 					<div class="hover06 column">
+					<a href="<?php echo site_url('hotel/detail/'.$t['id_hotel']);?>">	
 						<div>
-							<figure><img src="<?php echo site_url('assets/images/s1.jpg');?>" alt=" " class="img-responsive"></figure>
+							<figure><img src="<?php echo site_url('assets/images/s1.jpg');?>" alt="" class="img-responsive"></figure>
 						</div>
+					</a>
 					</div>
 					<div class="agile_services_grid_pos">
 						<i class="fa fa-globe" aria-hidden="true"></i>

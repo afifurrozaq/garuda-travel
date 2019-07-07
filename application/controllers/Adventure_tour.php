@@ -40,4 +40,13 @@ class Adventure_tour extends CI_Controller {
 		$this->load->view('adventure_tour',$data);
 		$this->load->view('footer');
 	}
+
+	public function detail($id)
+	{
+        $data['tbl_adventure_tour'] = $this->Tbl_adventure_tour_model->get_tbl_adventure_tour($id);
+		$this->load->view('header');
+		$this->load->view('detail_adventure', $data);
+		$this->load->view('footer');
+	}
+
 }

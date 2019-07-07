@@ -49,22 +49,33 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <header>
 	<div class="container agile-banner_nav">
 		<div class="row header-top">
+			<?php if(!isset($_SESSION['username'])){ ?>
 			<div class="col-md-1 top-left p-0">
-				<p><i class="fa fa-user-circle-o" aria-hidden="true"></i> <a href="#" data-toggle="modal" data-target="#myModal">Login</a> </p>
+				<p><i class="fa fa-user-circle-o" aria-hidden="true"></i> <a href="#" data-toggle="modal" data-target="#myModal">Login </a> </p>
 				
 			</div>
-			<div class="col-md-4 top-left p-0">
+			<div class="col-md-2 top-left p-0">
 				
-				<p><i class="fa fa-user-circle-o" aria-hidden="true"></i> <a href="#" data-toggle="modal" data-target="#myModal">Register</a> </p>
+				<p><a href="#" data-toggle="modal" data-target="#myModal2">Register</a> </p>
 			</div>
-			<div class="col-md-7 top-right p-0">
-				<p><i class="fa fa-map-marker" aria-hidden="true"></i> Australian Travel Agency, Ravish NSW, Australia.
+			<?php }else{ ?>
+				<div class="col-md-1 top-left p-0">
+				<p> <?php echo $_SESSION['username']; ?> </p>
+				
+			</div>
+			<div class="col-md-2 top-left p-0">
+				
+				<p><a href="<?php echo site_url("auth/logout");?>">logout</a> </p>
+			</div>
+			<?php } ?>
+			<div class="col-md-9 top-right p-0">
+				<p><i class="fa fa-map-marker" aria-hidden="true"></i> Jl. A. Yani No.11,Kota Malang
 			</div>
 		</div>
 	
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			
-			<h1><a class="navbar-brand" href="index.html">Garuda Travel</a></h1>
+			<h1><a class="navbar-brand" href="<?php echo site_url();?>">Garuda Travel</a></h1>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 			</button>
@@ -72,19 +83,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active">
-						<a class="nav-link" style="font-size: 12px" href="index.html">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link" style="font-size: 12px" href="<?php echo site_url();?>">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" style="font-size: 12px" href="about.html">Hotel</a>
+						<a class="nav-link" style="font-size: 12px" href="<?php echo site_url('hotel/');?>">Hotel</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" style="font-size: 12px" href="services.html">Rent Car</a>
+						<a class="nav-link" style="font-size: 12px" href="<?php echo site_url('rent_car/');?>">Rent Car</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" style="font-size: 12px" href="projects.html">Leadership Camp</a>
+						<a class="nav-link" style="font-size: 12px" href="<?php echo site_url('leadership_camp/');?>">Leadership Camp</a>
 					</li>
 					<li class="nav-item pr-lg-0">
-						<a class="nav-link pr-lg-0" style="font-size: 12px" href="contact.html">Adventure Tour</a>
+						<a class="nav-link pr-lg-0" style="font-size: 12px" href="<?php echo site_url("adventure_tour/");?>">Adventure Tour</a>
 					</li>
 					<li class="dropdown nav-item">
 						<a href="#" style="font-size: 12px" class="dropdown-toggle nav-link" data-toggle="dropdown">Article
@@ -92,10 +103,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</a>
 						<ul class="dropdown-menu agile_short_dropdown">
 							<li>
-								<a style="font-size: 12px" href="pricing.html">Serba-Serbi</a>
+								<a style="font-size: 12px" href="<?php echo site_url('article/article_jenis/serba_serbi');?>">Serba-Serbi</a>
 							</li>
 							<li>
-								<a style="font-size: 12px" href="about.html">Malang Over View</a>
+								<a style="font-size: 12px" href="<?php echo site_url('article/article_jenis/malang_over_view');?>">Malang Over View</a>
 							</li>
 						</ul>
 					</li>
@@ -535,10 +546,52 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	  <div class="modal-content">
 		<div class="modal-header">
 		  <button type="button" class="close" data-dismiss="modal">&times;</button>
-		  <h4 class="modal-title">Modal Header</h4>
+		  <h4 class="modal-title">Login</h4>
 		</div>
 		<div class="modal-body">
-		  <p>Some text in the modal.</p>
+		<?php echo form_open('Auth/login'); ?>
+			<div class="form-group">
+				<label for="email">Username:</label>
+				<input type="text" name="username"  value="<?php echo $this->input->post('username'); ?>" class="form-control" id="username">
+			</div>
+			<div class="form-group">
+				<label for="pwd">Password:</label>
+				<input type="password" name="pass" value="<?php echo $this->input->post('pass'); ?>" class="form-control" id="pass">
+			</div>
+		
+			<button type="submit" class="btn btn-default">Submit</button>
+            <?php echo form_close(); ?>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		</div>
+	  </div>
+  
+	</div>
+</div>
+
+<div id="myModal2" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+  
+	  <!-- Modal content-->
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <button type="button" class="close" data-dismiss="modal">&times;</button>
+		  <h4 class="modal-title">Register</h4>
+		</div>
+		<div class="modal-body">
+            <?php echo form_open('Auth/add'); ?>
+			<div class="form-group">
+				<label for="email">Username:</label>
+				<input type="text" name="username"  value="<?php echo $this->input->post('username'); ?>" class="form-control" id="username">
+			</div>
+			<div class="form-group">
+				<label for="pwd">Password:</label>
+				<input type="password" name="pass" value="<?php echo $this->input->post('pass'); ?>" class="form-control" id="pass">
+			</div>
+		
+			<button type="submit" class="btn btn-default">Submit</button>
+            <?php echo form_close(); ?>
 		</div>
 		<div class="modal-footer">
 		  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

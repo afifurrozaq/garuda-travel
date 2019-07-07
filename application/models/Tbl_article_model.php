@@ -19,6 +19,7 @@ class Tbl_article_model extends CI_Model
         return $this->db->get_where('tbl_article',array('id_article'=>$id_article))->row_array();
     }
     
+    
     /*
      * Get all tbl_article count
      */
@@ -37,6 +38,7 @@ class Tbl_article_model extends CI_Model
         if(isset($params) && !empty($params))
         {
             $this->db->limit($params['limit'], $params['offset']);
+            $this->db->where("jenis_article",$params['jenis']);
         }
         return $this->db->get('tbl_article')->result_array();
     }
