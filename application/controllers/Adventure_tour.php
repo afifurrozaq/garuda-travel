@@ -18,10 +18,26 @@ class Adventure_tour extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	function __construct()
+    {
+        parent::__construct();
+        $this->load->model('Tbl_adventure_tour_model');
+	} 
+	
 	public function index()
 	{
+		$params['limit'] = RECORDS_PER_PAGE; 
+        $params['offset'] = ($this->input->get('per_page')) ? $this->input->get('per_page') : 0;
+        
+        $config = $this->config->item('pagination');
+        $config['base_url'] = site_url('tbl_adventure_tour/index?');
+        $config['total_rows'] = $this->Tbl_adventure_tour_model->get_all_tbl_adventure_tour_count();
+        $this->pagination->initialize($config);
+
+        $data['tbl_adventure_tour'] = $this->Tbl_adventure_tour_model->get_all_tbl_adventure_tour($params);
+        
 		$this->load->view('header');
-		$this->load->view('adventure_tour');
+		$this->load->view('adventure_tour',$data);
 		$this->load->view('footer');
 	}
 }

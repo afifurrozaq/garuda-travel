@@ -18,10 +18,25 @@ class Article extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	function __construct()
+    {
+        parent::__construct();
+        $this->load->model('Tbl_article_model');
+	} 
+	
 	public function index()
 	{
+		$params['limit'] = RECORDS_PER_PAGE; 
+        $params['offset'] = ($this->input->get('per_page')) ? $this->input->get('per_page') : 0;
+        
+        $config = $this->config->item('pagination');
+        $config['base_url'] = site_url('tbl_article/index?');
+        $config['total_rows'] = $this->Tbl_article_model->get_all_tbl_article_count();
+        $this->pagination->initialize($config);
+
+        $data['tbl_article'] = $this->Tbl_article_model->get_all_tbl_article($params);
 		$this->load->view('header');
-		$this->load->view('article');
+		$this->load->view('article',$data);
 		$this->load->view('footer');
 	}
 }

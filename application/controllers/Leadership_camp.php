@@ -18,10 +18,25 @@ class Leadership_camp extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	function __construct()
+    {
+        parent::__construct();
+        $this->load->model('Tbl_leader_camp_model');
+	} 
+	
 	public function index()
 	{
+		$params['limit'] = RECORDS_PER_PAGE; 
+        $params['offset'] = ($this->input->get('per_page')) ? $this->input->get('per_page') : 0;
+        
+        $config = $this->config->item('pagination');
+        $config['base_url'] = site_url('tbl_leader_camp/index?');
+        $config['total_rows'] = $this->Tbl_leader_camp_model->get_all_tbl_leader_camp_count();
+        $this->pagination->initialize($config);
+
+        $data['tbl_leader_camp'] = $this->Tbl_leader_camp_model->get_all_tbl_leader_camp($params);
 		$this->load->view('header');
-		$this->load->view('leadership_camp');
+		$this->load->view('leadership_camp', $data);
 		$this->load->view('footer');
 	}
 }
