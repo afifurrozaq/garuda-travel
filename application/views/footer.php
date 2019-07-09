@@ -37,7 +37,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!-- copyright -->
 <section class="copyright py-4 text-center">
 	<div class="container">
-		<p>© 2018 In Travel. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="=_blank"> W3layouts </a></p>
+		<p>© 2019 Garuda Travel. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="=_blank"> Kopegtel </a></p>
 	</div>
 </section>
 <!-- //copyright -->
