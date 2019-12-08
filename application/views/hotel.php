@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="col-lg-4 col-sm-6 mb-5 w3_agile_services_grid">
 				<div class="agile_services_grid">
 					<div class="hover06 column">
-					<a href="<?php echo site_url('hotel/detail/'.$t['id_hotel']);?>">	
+					<a href="<?php echo site_url('hotel/detail/'.$t['id_place']);?>">	
 						<div>
 							<figure><img src="<?php echo site_url('assets/images/s1.jpg');?>" alt="" class="img-responsive"></figure>
 						</div>

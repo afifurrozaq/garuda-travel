@@ -12,11 +12,11 @@ class Tbl_hotel_model extends CI_Model
     }
     
     /*
-     * Get tbl_hotel by id_hotel
+     * Get tbl_hotel by id_place
      */
-    function get_tbl_hotel($id_hotel)
+    function get_tbl_hotel($id_place)
     {
-        return $this->db->get_where('tbl_hotel',array('id_hotel'=>$id_hotel))->row_array();
+        return $this->db->get_where('tbl_place',array('id_place'=>$id_place))->row_array();
     }
     
     /*
@@ -24,7 +24,7 @@ class Tbl_hotel_model extends CI_Model
      */
     function get_all_tbl_hotel_count()
     {
-        $this->db->from('tbl_hotel');
+        $this->db->from('tbl_place');
         return $this->db->count_all_results();
     }
         
@@ -33,12 +33,12 @@ class Tbl_hotel_model extends CI_Model
      */
     function get_all_tbl_hotel($params = array())
     {
-        $this->db->order_by('id_hotel', 'desc');
+        $this->db->order_by('id_place', 'desc');
         if(isset($params) && !empty($params))
         {
             $this->db->limit($params['limit'], $params['offset']);
         }
-        return $this->db->get('tbl_hotel')->result_array();
+        return $this->db->get('tbl_place')->result_array();
     }
         
     /*
@@ -46,24 +46,24 @@ class Tbl_hotel_model extends CI_Model
      */
     function add_tbl_hotel($params)
     {
-        $this->db->insert('tbl_hotel',$params);
+        $this->db->insert('tbl_place',$params);
         return $this->db->insert_id();
     }
     
     /*
      * function to update tbl_hotel
      */
-    function update_tbl_hotel($id_hotel,$params)
+    function update_tbl_hotel($id_place,$params)
     {
-        $this->db->where('id_hotel',$id_hotel);
-        return $this->db->update('tbl_hotel',$params);
+        $this->db->where('id_place',$id_place);
+        return $this->db->update('tbl_place',$params);
     }
     
     /*
      * function to delete tbl_hotel
      */
-    function delete_tbl_hotel($id_hotel)
+    function delete_tbl_hotel($id_place)
     {
-        return $this->db->delete('tbl_hotel',array('id_hotel'=>$id_hotel));
+        return $this->db->delete('tbl_place',array('id_place'=>$id_place));
     }
 }

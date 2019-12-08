@@ -20,15 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		
 		<div class="subscribe-grid text-center">
 			<p class="para three mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at placerat ante. Praesent nulla nunc, pretium dapibus efficitur in, auctor eget elit. Lorem ipsum dolor sit amet </p>
-			<h5>Subscribe for our latest updates</h5>
-			<p>Get
-				<span>10%</span> off on booking</p>
-			<form action="#" method="post">
-				<input class="form-control" type="email" placeholder="Subscribe" name="Subscribe" required="">
-				<button class="btn1">
-					<i class="fa fa-paper-plane"></i>
-				</button>
-			</form>
+		
 		</div>
 	</div>
 </footer>

@@ -86,9 +86,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<a class="nav-link" style="font-size: 12px" href="<?php echo site_url();?>">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" style="font-size: 12px" href="<?php echo site_url('hotel/');?>">Hotel</a>
-					</li>
-					<li class="nav-item">
 						<a class="nav-link" style="font-size: 12px" href="<?php echo site_url('rent_car/');?>">Rent Car</a>
 					</li>
 					<li class="nav-item">
@@ -133,8 +130,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<div class="banner-info_agile_w3ls">
 									<h2>Travel Things go as <span> per plan</span>. </h2>
 									<p>Holiday packages and special deals.</p>
-									<a href="about.html" class="mr-2">Read More <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-									<a href="contact.html">Contact Us <i class="fa fa-caret-right" aria-hidden="true"></i></a>
 								</div>
 							</div>
 						</div>
@@ -147,8 +142,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<div class="banner-info_agile_w3ls">
 									<h3>Best travel website <span> Inspire</span> You.</h3>
 									<p>Holiday packages and special deals.</p>
-									<a href="about.html" class="mr-2">Read More <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-									<a href="contact.html">Contact Us <i class="fa fa-caret-right" aria-hidden="true"></i></a>
 								</div>
 							</div>
 						</div>
@@ -161,44 +154,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<div class="banner-info_agile_w3ls">
 									<h3>Lets Find Some <span>Beautiful</span> Place.</h3>
 									<p>Holiday packages and special deals.</p>
-									<a href="about.html" class="mr-2">Read More <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-									<a href="contact.html">Contact Us <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+
 								</div>
 							</div>
 						</div>
 						</div>
 					</li>
-					<li>
-						<div class="banner-top3">
-						<div class="layer">
-							<div class="container">
-								<div class="banner-info_agile_w3ls">
-									<h3>Travelling Is like <span>Breathing</span>.</h3>
-									<p>Holiday packages and special deals.</p>
-									<a href="about.html" class="mr-2">Read More <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-									<a href="contact.html">Contact Us <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-								</div>
-							</div>
-						</div>
-						</div>
-					</li>
+
 				</ul>
 			</div>
 			<div class="clearfix"> </div>
 
 			
 		<!-- Social Icons -->
-		<div class="w3_agileits_social_media">
-			<ul>
-				<li><a href="#" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-				<li><a href="#" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-				<li><a href="#" class="wthree_dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-				<li><a href="#" class="wthree_behance"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-			</ul>
-		</div>
-		<!-- //Social Icons -->
-		
-			<p class="ab">connect with us</p>
 			
 		<!-- To bottom button-->
 		<div class="thim-click-to-bottom">
@@ -212,59 +180,69 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		<!--//Slider-->
 		
+<!-- //booking form -->
 
-<!-- booking form -->
-<section class="booking py-5" id="booking">
-	<h3 class="text-center mb-4">Search Your Tour</h3>
-	<div class="container">
-		<div class="book-form">
-		   <form action="#" method="post">
-			<div class="row">
-				<div class="col-md-3 col-sm-6 col-6 px-2 form-time-w3layouts editContent">
-						<label class="editContent"><span class="fa fa-user" aria-hidden="true"></span> Traveller Name</label>
-						<input type="text" placeholder="Your Full Name" required="">
+
+
+<!-- welcome -->
+<section class="welcome py-5">
+	<div class="container py-3">
+	<h3 class="heading text-center mb-md-5 mb-4"> About Us </h3>
+		<div class="row welcome-grids">
+			<div class="col-lg-6">
+				<h4 class="mb-3">Garuda Travel</h4>
+				<h3>Liburan Mudah dengan Garuda Travel.</h3>
+				<p class="my-4">Garuda Travel merupakan aplikasi yang dikembangkan oleh Koperasi Pegawai Telkom Malang yang bertujuan untuk memudahkan para traveler dalam memilih paket liburan</p>
+				<!-- <a href="#">Read More</a> -->
+			</div>
+			<div class="col-lg-6 mt-lg-0 mt-5 welcome-grid3">
+				<div class="position">
+					<img src="<?php echo site_url('assets/images/banner1.jpg');?>" alt="" class="img-fluid" />
 				</div>
-				<div class="col-md-3 col-sm-6 col-6 px-2 form-date-w3-agileits editContent">
-						<label class="editContent"><span class="fa fa-map-marker" aria-hidden="true"></span> Tour place</label>
-						<select class="form-control">
-							<option>Destination</option>
-							<option>London</option>
-							<option>Paris</option>
-							<option>India</option>
-							<option>Japan</option>
-							<option>America</option>
-						</select>
-				</div>
-				<div class="col-md-2 col-sm-4 col-6 px-2 form-left-agileits-w3layouts editContent">
-						<label class="editContent"><span class="fa fa-bus" aria-hidden="true"></span> Trip in</label>
-					<div class="agileits_w3layouts_main_gridl">
-						<input class="date has Datepicker" id="datepicker" name="Text" type="text" value="Start Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select Date';}" required="">
-					</div>
-				</div>
-				<div class="col-md-2 col-sm-4 col-6 px-2 form-left-agileits-w3layouts editContent">
-						<label class="editContent"><span class="fa fa-bus" aria-hidden="true"></span> Trip out</label>
-					<div class="agileits_w3layouts_main_gridl">
-						<input class="date has Datepicker" id="datepicker1" name="Text" type="text" value="Return Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select Date';}" required="">
-					</div>
-				</div>
-				<div class="col-md-2 px-2 col-sm-4 col-6 form-left-agileits-submit editContent">
-					  <input type="submit" value="Search">
-				</div>
-				</div>
-			</form>
+			</div>
 		</div>
 	</div>
 </section>
-<!-- //booking form -->
-
+<!-- //welcome -->
 <!-- booking bottom -->	
+
+<!-- //booking bottom -->	
+<!-- /services -->
+<section class="featured_services py-5">
+	<div class="container py-3">
+		<h3 class="heading text-center mb-5">Serba Serbi</h3>
+		<div class="row agile_inner_info">
+
+		<?php foreach($tbl_article as $t){ ?>
+			<div class="col-lg-4 col-md-6 w3_agile_services_grid">
+				<div class="agile_services_grid">
+					<div class="hover06 column">
+						<div>
+							<figure><img src="<?php echo site_url('assets/images/s1.jpg');?>" alt=" " class="img-responsive"></figure>
+						</div>
+					</div>
+					<div class="agile_services_grid_pos">
+						<i class="fa fa-globe" aria-hidden="true"></i>
+					</div>
+				</div>
+				<h4><?php echo $t['judul_article']; ?></h4>
+				<p><?php echo $t['isi_article']; ?></p>
+			</div>
+		<?php } ?>
+			<div class="mx-auto mt-lg-4 mt-5 text-center">
+		<?php echo $this->pagination->create_links(); ?> 
+			</div>
+		</div>
+	</div>
+</section>
+
 <section class="bottom py-5">
 	<div class="container">
 		<div class="row bottom-grids">
 			<div class="col-md-6 grid1">
 				<h4 class="mb-4">Discount 10-35% off</h4>
-				<h3 class="mb-4">Travel the world with us</h3>
-				<a href="#">Read More</a>
+				<h3 class="mb-4">Garuda Travel the world with us</h3>
+				<!-- <a href="#">Read More</a> -->
 			</div>
 			<div class="col-md-3 video-play">
 				<!-- video -->
@@ -296,236 +274,34 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 	</div>
 </section>
-<!-- //booking bottom -->	
 
-<!-- welcome -->
-<section class="welcome py-5">
-	<div class="container py-3">
-	<h3 class="heading text-center mb-md-5 mb-4"> About Us </h3>
-		<div class="row welcome-grids">
-			<div class="col-lg-6">
-				<h4 class="mb-3">welcome to the travel world</h4>
-				<h3>Remember that happiness is a way of travel, not a destination.</h3>
-				<p class="my-4">Aliquam consequat rhoncus ipsum et hendrerit. Proin sed nibhila rin iaculis, aliquet nunc nec, ornare nulla. Duis maximus faucibus ipsum consectetur. Donec elementum hendrerit arcu id rhoncus initis. lot Suspendisse ut elementum nunc. Aenean aliquam porta sem ins tincidunt congue. Phasellus dictum viverra sem id vehicula. Fus cenec elementum sapien.</p>
-				<a href="#">Read More</a>
-			</div>
-			<div class="col-lg-6 mt-lg-0 mt-5 welcome-grid3">
-				<div class="position">
-					<img src="<?php echo site_url('assets/images/banner1.jpg');?>" alt="" class="img-fluid" />
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- //welcome -->
-
-<!-- /services -->
+<!-- //services -->
 <section class="featured_services py-5">
 	<div class="container py-3">
-		<h3 class="heading text-center mb-5">Our Services</h3>
-		<div class="row agile_inner_info">
-			<div class="col-lg-4 col-md-6 w3_agile_services_grid">
-				<div class="agile_services_grid">
-					<div class="hover06 column">
-						<div>
-							<figure><img src="<?php echo site_url('assets/images/s1.jpg');?>" alt=" " class="img-responsive"></figure>
-						</div>
-					</div>
-					<div class="agile_services_grid_pos">
-						<i class="fa fa-globe" aria-hidden="true"></i>
-					</div>
-				</div>
-				<h4>Tempus eu turpis</h4>
-				<p>Lorem ipsum dolor sit amet, do eiusmod tempor incididunt .Aliquam lacus turpis.</p>
-			</div>
-			<div class="col-lg-4 col-md-6 mt-md-0 mt-5 w3_agile_services_grid">
-				<div class="agile_services_grid">
-					<div class="hover06 column">
-						<div>
-							<figure><img src="<?php echo site_url('assets/images/s2.jpg');?>" alt=" " class="img-responsive"></figure>
-						</div>
-					</div>
-					<div class="agile_services_grid_pos">
-						<i class="fa fa-suitcase" aria-hidden="true"></i>
-					</div>
-				</div>
-				<h4>Lobortis quis dolor</h4>
-				<p>Lorem ipsum dolor sit amet, do eiusmod tempor incididunt .Aliquam lacus turpis.</p>
-			</div>
-			<div class="col-lg-4 col-md-6 mt-lg-0 mt-5 w3_agile_services_grid">
-				<div class="agile_services_grid">
-					<div class="hover06 column">
-						<div>
-							<figure><img src="<?php echo site_url('assets/images/s3.jpg');?>" alt=" " class="img-responsive"></figure>
-						</div>
-					</div>
-					<div class="agile_services_grid_pos">
-						<i class="fa fa-bed" aria-hidden="true"></i>
-					</div>
-				</div>
-				<h4>Dignissim rhoncus</h4>
-				<p>Lorem ipsum dolor sit amet, do eiusmod tempor incididunt .Aliquam lacus turpis.</p>
-			</div>
-			<div class="mx-auto mt-lg-4 mt-5 text-center">
-				<a href="services.html">Explore all Services</a>
-			</div>
+		<h3 class="heading text-center mb-5">Near By</h3>
+		<div id="nearby" class="row agile_inner_info">
+			
 		</div>
+	
 	</div>
 </section>
-<!-- //services -->
-
-<!--/middle-->
-<section class="middle-sec-agileinfo-w3ls py-5">
-	<div class="container py-3">
-		<h3 class="heading text-center mb-5"> Latest Tour Blog </h3>
-			<div class="row inner-sec">
-				<div class="col-lg-4 col-md-6 news-left">
-					<ul id="demo1_thumbs" class="list-inline">
-						<li>
-							<a href="images/banner1.jpg">
-								<img src="<?php echo site_url('assets/images/b1.jpg');?>" alt="" data-desoslide-caption="<h3>Latest Post 1</h3>">
-								<div class="mid-text-info">
-									<h4>Maecenas aliqua Aenean aliquam porta sem ins.</h4>
-									<p class="font-italic">posted 2 days ago </p>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="images/banner2.jpg">
-								<img src="<?php echo site_url('assets/images/b2.jpg');?>" alt="" data-desoslide-caption="<h3>Latest Post 2</h3>">
-								<div class="mid-text-info">
-									<h4>Maecenas aliqua Aenean aliquam porta sem ins.</h4>
-									<p class="font-italic">posted 2 days ago </p>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="images/banner5.jpg">
-								<img src="<?php echo site_url('assets/images/b5.jpg');?>" alt="" data-desoslide-caption="<h3>Latest Post 3</h3>">
-								<div class="mid-text-info">
-									<h4>Maecenas aliqua Aenean aliquam porta sem ins.</h4>
-									<p class="font-italic">posted 2 days ago </p>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="images/banner4.jpg">
-								<img src="<?php echo site_url('assets/images/b4.jpg');?>" alt="" data-desoslide-caption="<h3>Latest Post 4</h3>">
-								<div class="mid-text-info">
-									<h4>Maecenas aliqua Aenean aliquam porta sem ins.</h4>
-									<p class="font-italic">posted 2 days ago </p>
-								</div>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div id="demo1_main_image" class="col-lg-8 col-md-6 news-right">
-					<h4 class="text-uppercase mb-4">Happy Travelling </h4>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-
-	</section>
-	<!--//middle-->
-
-<!-- team -->
-	<div class="team py-5">
-	   <div class="agile_dot_info two">
-		<div class="container">
-		<h3 class="heading text-center mb-5">Our Team</h3>
-			<div class="row agileits_team_grids">
-				<div class="col-lg-3 col-sm-6 agileits_team_grid">
-					<div class="agileits_team_grid_figure">
-						<img src="<?php echo site_url('assets/images/b1.jpg');?>" alt=" " class="img-responsive" />
-					</div>
-					<div class="agileits_team_grid_figure_social">
-						<ul class="w3ls_social">
-							<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-						</ul>
-					</div>
-					<div class="clearfix"> </div>
-					<h4> Charlotte <span>guide</span></h4>
-					<p>Morbi non elit sed neque init rhoncus maximus ac enim.</p>
-				</div>
-				<div class="col-lg-3 col-sm-6 agileits_team_grid">
-					<div class="agileits_team_grid_figure">
-						<img src="<?php echo site_url('assets/images/b1.jpg');?>" alt=" " class="img-responsive" />
-					</div>
-					<div class="agileits_team_grid_figure_social">
-						<ul class="w3ls_social">
-							<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-						</ul>
-					</div>
-					<div class="clearfix"> </div>
-					<h4>Isabella <span>guide</span></h4>
-					<p>Morbi non elit sed neque init rhoncus maximus ac enim.</p>
-				</div>
-				<div class="col-lg-3 col-sm-6 agileits_team_grid">
-					<div class="agileits_team_grid_figure">
-						<img src="<?php echo site_url('assets/images/b2.jpg');?>" alt=" " class="img-responsive" />
-					</div>
-					<div class="agileits_team_grid_figure_social">
-						<ul class="w3ls_social">
-							<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-						</ul>
-					</div>
-					<div class="clearfix"> </div>
-					<h4>Alexander  <span>guide</span></h4>
-					<p>Morbi non elit sed neque init rhoncus maximus ac enim.</p>
-				</div>
-				<div class="col-lg-3 col-sm-6 agileits_team_grid">
-					<div class="agileits_team_grid_figure">
-						<img src="<?php echo site_url('assets/images/b2.jpg');?>" alt=" " class="img-responsive" />
-					</div>
-					<div class="agileits_team_grid_figure_social">
-						<ul class="w3ls_social">
-							<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-						</ul>
-					</div>
-					<div class="clearfix"> </div>
-					<h4>Laura Carl <span>guide</span></h4>
-					<p>Morbi non elit sed neque init rhoncus maximus ac enim.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- //team -->
-	
 <!-- footer -->
 <footer class="py-5">
 	<div class="container py-md-3">
 		<div class="row footer-grids pb-md-5 pb-3">	
-			<div class="col-md-3 col-sm-6 col-6">
+			<div class="col-md-4 col-sm-6 col-6">
 				<a href="#"> <i class="fa fa-phone"></i>Call Us</a>
 			</div>
-			<div class="col-md-3 col-sm-6 col-6">
+			<div class="col-md-4 col-sm-6 col-6">
 				<a href="#"> <i class="fa fa-envelope"></i>Send Message</a>
 			</div>
-			<div class="col-md-3 col-sm-6 col-6 mt-md-0 mt-2">
-				<a href="#"> <i class="fa fa-skype"></i>Skype Call</a>
-			</div>
-			<div class="col-md-3 col-sm-6 col-6 mt-md-0 mt-2">
-				<a href="#"> <i class="fa fa-comment"></i>Online Chat</a>
+			<div class="col-md-4 col-sm-6 col-6 mt-md-0 mt-2">
+				<a href="#"> <i class="fa fa-whatsapp"></i>Whatsapp</a>
 			</div>
 		</div>
 		
 		<div class="subscribe-grid text-center">
 			<p class="para three mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at placerat ante. Praesent nulla nunc, pretium dapibus efficitur in, auctor eget elit. Lorem ipsum dolor sit amet </p>
-			<h5>Subscribe for our latest updates</h5>
-			<p>Get
-				<span>10%</span> off on booking</p>
-			<form action="#" method="post">
-				<input class="form-control" type="email" placeholder="Subscribe" name="Subscribe" required="">
-				<button class="btn1">
-					<i class="fa fa-paper-plane"></i>
-				</button>
-			</form>
 		</div>
 	</div>
 </footer>
@@ -701,6 +477,72 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<!-- //here ends scrolling icon -->
 	<!-- start-smoth-scrolling -->
 	
+	<script type="text/javascript">
+		$(document).ready(function(){
+ 
+                $.ajax({
+                    url : "<?php echo site_url('hotel/get_json_data_place');?>",
+                    method : "POST",
+                    async : true,
+                    dataType : 'json',
+                    success: function(data){
+					getLocation();
+						function getLocation() {
+						  if (navigator.geolocation) {
+						    navigator.geolocation.getCurrentPosition(showPosition);
+						  } else { 
+						    console.log("Geolocation is not supported by this browser.");
+						  }
+						}
+
+						function showPosition(position) {
+						var html = "";
+					    var poslat = position.coords.latitude;
+					    var poslng = position.coords.longitude;
+
+						  console.log( "Latitude: " + position.coords.latitude + 
+						  "<br>Longitude: " + position.coords.longitude);
+						
+
+				    function distance(lat1, lon1, lat2, lon2, unit) {
+				    	var radlat1 = Math.PI * lat1/180
+				    	var radlat2 = Math.PI * lat2/180
+				    	var theta = lon1-lon2
+				    	var radtheta = Math.PI * theta/180
+				    	var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+				    	if (dist > 1) {
+				    		dist = 1;
+				    	}
+				    	dist = Math.acos(dist)
+				    	dist = dist * 180/Math.PI
+				    	dist = dist * 60 * 1.1515
+				    	if (unit=="K") { dist = dist * 1.609344 }
+				    	if (unit=="N") { dist = dist * 0.8684 }
+				    	return dist
+				    }
+
+				    for (var i = 0; i < data.length; i++) {
+				    	console.log(distance(poslat, poslng, data[i].latitude, data[i].longitude, "K"));
+    					// if this location is within 0.1KM of the user, add it to the list
+				        if (distance(poslat, poslng, data[i].latitude, data[i].longitude, "K") <= 40 ) {
+				        	console.log(data[i].name_place)
+				        html += '<div id="nearby" class="col-lg-4 col-md-6 w3_agile_services_grid"><div class="agile_services_grid"><div class="hover06 column"><div><figure><img src="<?php echo site_url('assets/images/s1.jpg');?>" alt=" " class="img-responsive"></figure></div></div><div class="agile_services_grid_pos"><i class="fa fa-globe" aria-hidden="true"></i></div></div><h4>'+data[i].name_place+'</h4><p>'+data[i].description+'</p></div>';
+				 		}
+					}
+						
+    				$('#nearby').append(html);
+    				}
+                    // console.log(data)
+                    }
+                });
+             
+        });
+
+	
+
+
+    // $('#nearbystops').append(html);
+	</script>
 <!-- //js-scripts -->
 
 </body>
