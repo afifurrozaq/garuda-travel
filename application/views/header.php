@@ -65,14 +65,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<li class="nav-item ">
 						<a class="nav-link" style="font-size: 12px" href="<?php echo site_url();?>">Home </a>
 					</li>
-					<li class="nav-item active">
-						<a class="nav-link" style="font-size: 12px" href="<?php echo site_url("hotel/");?>">Hotel <span class="sr-only">(current)</span></a>
-					</li>
 					<li class="nav-item">
 						<a class="nav-link" style="font-size: 12px" href="<?php echo site_url("rent_car/");?>">Rent Car</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" style="font-size: 12px" href="<?php echo site_url("leadership_camp/");?>">Leadership Camp</a>
+						<a class="nav-link" style="font-size: 12px" href="<?php echo site_url("leadership_camp/");?>">Jasa Dokumentasi</a>
 					</li>
 					<li class="nav-item pr-lg-0">
 						<a class="nav-link pr-lg-0" style="font-size: 12px" href="<?php echo site_url("adventure_tour/");?>">Adventure Tour</a>

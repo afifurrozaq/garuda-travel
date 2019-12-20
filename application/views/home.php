@@ -89,7 +89,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<a class="nav-link" style="font-size: 12px" href="<?php echo site_url('rent_car/');?>">Rent Car</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" style="font-size: 12px" href="<?php echo site_url('leadership_camp/');?>">Leadership Camp</a>
+						<a class="nav-link" style="font-size: 12px" href="<?php echo site_url('leadership_camp/');?>">Jasa Dokumentasi</a>
 					</li>
 					<li class="nav-item pr-lg-0">
 						<a class="nav-link pr-lg-0" style="font-size: 12px" href="<?php echo site_url("adventure_tour/");?>">Adventure Tour</a>
@@ -197,7 +197,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 			<div class="col-lg-6 mt-lg-0 mt-5 welcome-grid3">
 				<div class="position">
-					<img src="<?php echo site_url('assets/images/banner1.jpg');?>" alt="" class="img-fluid" />
+					<img src="<?php echo site_url('assets/images/b33.jpeg');?>" alt="" class="img-fluid" />
 				</div>
 			</div>
 		</div>
@@ -269,7 +269,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			</div>
 			<div class="col-md-3 mt-md-0 mt-4">
-				<img src="<?php echo site_url('assets/images/off.jpg');?>" alt="" class="img-fluid" />
+				<img src="<?php echo site_url('assets/images/b44.jpeg');?>" alt="" class="img-fluid" />
 			</div>
 		</div>
 	</div>

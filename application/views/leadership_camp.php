@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!-- best offers -->
 <section class="featured_services py-5">
 	<div class="container py-sm-3">
-		<h2 class="heading text-center mb-sm-5 mb-4">Leadership Camp</h2>
+		<h2 class="heading text-center mb-sm-5 mb-4">Jasa Dokumentasi</h2>
 		<div class="row agile_inner_info">
 		<?php foreach($tbl_leader_camp as $t){ ?>
 			<div class="col-lg-4 col-sm-6 mb-5 w3_agile_services_grid">
