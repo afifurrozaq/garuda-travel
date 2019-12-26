@@ -526,7 +526,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     					// if this location is within 0.1KM of the user, add it to the list
 				        if (distance(poslat, poslng, data[i].latitude, data[i].longitude, "K") <= 40 ) {
 				        	console.log(data[i].name_place)
-				        html += '<div id="nearby" class="col-lg-4 col-md-6 w3_agile_services_grid"><div class="agile_services_grid"><div class="hover06 column"><div><figure><img src="<?php echo site_url('assets/images/s1.jpg');?>" alt=" " class="img-responsive"></figure></div></div><div class="agile_services_grid_pos"><i class="fa fa-globe" aria-hidden="true"></i></div></div><h4>'+data[i].name_place+'</h4><p>'+data[i].description+'</p></div>';
+				        html += '<div id="nearby" class="col-lg-4 col-md-6 w3_agile_services_grid"><div class="agile_services_grid"><div class="hover06 column"><div><figure><img src="<?php echo site_url('assets/images/s1.jpg');?>" alt=" " class="img-responsive"></figure></div></div><div class="agile_services_grid_pos"><i class="fa fa-globe" aria-hidden="true"></i></div></div><a href="https://www.google.com/maps?saddr='+poslat+','+poslng+'&daddr='+data[i].latitude+','+data[i].longitude+'" target="_blank"><h4>'+data[i].name_place+'</h4></a><p>'+data[i].description+'</p></div>';
 				 		}
 					}
 						
